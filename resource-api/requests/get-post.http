@@ -1,0 +1,9 @@
+GET http://localhost:9926/Post?limit(1)
+Content-Type: application/json
+Authorization: Basic YWRtaW46YWRtaW4=
+
+###
+
+GET http://localhost:9926/Post/e63fd002-1666-4f8b-9ff1-e937076ad24c
+Content-Type: application/json
+Authorization: Basic YWRtaW46YWRtaW4=

@@ -1,0 +1,10 @@
+PUT http://localhost:9926/posts/4bac20bb-93aa-4d6f-8db5-0a8b9e6e5c32
+Content-Type: application/json
+Authorization: Basic YWRtaW46YWRtaW4=
+
+{
+  "title": "What is new in Harper 4.2",
+  "body": "Harper 4.2 is the latest version of Harper. It has many new features and improvements.",
+  "published": false,
+  "tags": ["harper", "4.2"]
+}

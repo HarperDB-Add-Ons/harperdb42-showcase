@@ -1,0 +1,13 @@
+{
+  "name": "graphql-schemas",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:container": "docker compose -f ../docker-compose.yml up -d harperdb-graphql"
+  },
+  "keywords": [],
+  "author": "Lucas Santos <hello@lsantos.dev> (https://lsantos.dev/)",
+  "license": "GPL-3.0",
+  "dependencies": {}
+}

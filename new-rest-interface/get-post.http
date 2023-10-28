@@ -1,0 +1,15 @@
+GET http://localhost:9926/posts?limit(1)
+Content-Type: application/json
+Authorization: Basic YWRtaW46YWRtaW4=
+
+###
+
+GET http://localhost:9926/posts
+Content-Type: application/json
+Authorization: Basic YWRtaW46YWRtaW4=
+
+###
+
+GET http://localhost:9926/posts/4bac20bb-93aa-4d6f-8db5-0a8b9e6e5c32
+Content-Type: application/json
+Authorization: Basic YWRtaW46YWRtaW4=

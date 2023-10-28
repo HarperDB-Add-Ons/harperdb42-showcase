@@ -1,0 +1,9 @@
+{
+  "name": "resource-api",
+  "version": "1.0.0",
+  "description": "Resources API",
+  "type": "module",
+  "dependencies": {
+    "harperdb": "^4.2.0-rc.2"
+  }
+}

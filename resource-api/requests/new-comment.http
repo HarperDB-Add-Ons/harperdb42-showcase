@@ -1,0 +1,8 @@
+POST http://localhost:9926/comments
+Content-Type: application/json
+Authorization: Basic YWRtaW46YWRtaW4=
+
+{
+  "body": "This is a comment",
+  "postId": "e63fd002-1666-4f8b-9ff1-e937076ad24c"
+}

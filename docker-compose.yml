@@ -1,0 +1,30 @@
+services:
+    harperdb-graphql:
+      image: harperdb/harperdb:4.2.0-rc.2
+      container_name: harperdb-graphqlschemas
+      restart: always
+      ports:
+        - 9925:9925
+        - 9926:9926
+      volumes:
+        - ./graphql-schemas/src/:/home/harperdb/hdb/components/
+      environment:
+        - HDB_ADMIN_USERNAME=admin
+        - HDB_ADMIN_PASSWORD=admin
+        - LOG_LEVEL=error
+        - RUN_IN_FOREGROUND=true
+
+    harperdb-resources:
+      image: harperdb/harperdb:4.2.0-rc.2
+      container_name: harperdb-graphqlschemas
+      restart: always
+      ports:
+        - 9925:9925
+        - 9926:9926
+      volumes:
+        - ./resource-api/src/:/home/harperdb/hdb/components/
+      environment:
+        - HDB_ADMIN_USERNAME=admin
+        - HDB_ADMIN_PASSWORD=admin
+        - LOG_LEVEL=error
+        - RUN_IN_FOREGROUND=true

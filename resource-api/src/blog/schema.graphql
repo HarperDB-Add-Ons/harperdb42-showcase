@@ -1,0 +1,18 @@
+type Post @table @export(name: "posts") @sealed {
+  id: ID @primaryKey
+  title: String!
+  slug: String! @indexed
+  body: String!
+  createdAt: Float @createdTime
+  updatedAt: Float @updatedTime
+  published: Boolean @default(value: false)
+  tags: [String]
+}
+
+type Comment @table @export(name: "comments") @sealed {
+  id: ID @primaryKey
+  body: String!
+  createdAt: Float @createdTime
+  updatedAt: Float @updatedTime
+  postId: String! @indexed
+}
